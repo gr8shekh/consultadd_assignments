@@ -1,0 +1,274 @@
+# li = []
+# for i in range(1,11):
+#     if i<3:
+#         temp = int(input('Enter integer number'))
+#         li.append(temp)
+#     elif i<6:
+#         temp = str(input('Enter string'))
+#         li.append(temp)
+#     elif i<9:
+#         temp = float(input('Enter float number'))
+#         li.append(temp)
+#     else:
+#         temp = complex(input("enter complex nnumber"))
+#         li.append(temp)
+# print(li)
+
+########################################################### Number 2
+# li = []
+# for i in range(1,6):
+#     li.append(i*2)
+
+# sl = slice(2,4)
+# print(li[sl])
+########################################################## Number 3
+# li = [4, 8, 10, 44, 53]
+# sum = 0
+# mult = 1
+# for i in li:
+#     sum += i
+#     mult*= i
+
+# print(sum)
+# print(mult)
+########################################################### Number 4
+# li = [4, 8, 10, 44, 53]
+# max = max(li)
+# min = min(li)
+# print(max, min)
+########################################################### Number 5
+# li = [4, 8, 10, 45, 53]
+# li_update = []
+# for i in li:
+#     if i%2 == 0:
+#         li_update.append(i)
+
+# print(li_update)
+############################################################ Number 6
+# import random
+# li=[]
+# li_sq = []
+# for i in range(1,31):
+#     temp = random.randint(1, 100)
+#     li.append(temp)
+# print(li)
+
+# for i in range(0,30):
+#     if i <5:
+#         print(li[i])
+#         li_sq.append(li[i]**2)
+#     elif i>=25:
+#         print(li[i])
+#         li_sq.append(li[i]**2)
+#     else:
+#         continue
+# print(li_sq)
+############################################## Number 7
+# li1 = [1,3,5,7,9,10]
+# li2 = [2,4,6,8]
+# li1.pop()
+# li1.extend(li2)
+# print(li1)
+# # for i in range(0,len(li2)):
+# #     li1.append(li2[i])
+# # print(li1)
+############################################## Number 8
+# a={1:10,2:20} 
+# b={3:30,4:40}
+# #a.update(b)
+# res = a | b
+# print(res)
+############################################## Number 9
+# dic = {}
+# n = int(input('Enter how many elements in dictionary    :'))
+# for i in range(1,n+1):
+#     dic[i] = i**2
+
+# print(dic)
+############################################## Number 10 works but output has '' around each element
+# ls = []
+# tp = ()
+# x = tuple(input("Enter numbers separated by a comma   :"))
+# for i in x:
+#     if i.isdigit() == True:
+#         int(i)
+#         print(i)
+#         ls.append(i)
+# print(ls)
+
+# tp = tuple(ls)
+# print(tp)
+###################################################################### Task 4
+# string = str(input('Enter a string   :'))
+# str_mod = string[::-1]
+# print(str_mod)
+######################################### Number 2
+# count_upper = 0
+# count_lower = 0
+# string = str(input('Enter a string   :'))
+# for i in string:
+#     if i.isupper() == True:
+#         count_upper += 1
+#     elif i.islower() == True:
+#         count_lower += 1
+# print('Lower    :', count_lower)
+# print('Upper    :', count_upper)
+######################################## Number 3
+# ls =[1,2,3,2,5,6,4,6,8,1]
+# ls_t =[]
+
+# for i in ls:
+#     if i not in ls_t:
+#         ls_t.append(i)
+# print(ls_t)
+######################################## number 4
+# li=[]
+# string_ori = str(input("Enter string with words separated by '-'    :"))
+# print(string_ori)
+# li = string_ori.rsplit('-')
+# print(li)
+######################################### Number 5
+# string = str(input("Enter string    :"))
+# print(string.upper())
+######################################### Number 6
+# sum = 0
+# string = str(input("Enter two numbers without space    :"))
+# for i in string:
+#     k = int(i)
+#     sum+=k
+# print(sum)
+########################################## Number 7
+
+# string1 = str(input("Enter first string    :"))
+# string2 = str(input("Enter second string    :"))
+# string1_len = len(string1)
+# string2_len = len(string2)
+
+# if string1_len== string2_len:
+#     print(string1)
+#     print(string2)
+# elif string1_len>string2_len:
+#     print(string1)
+# elif string1_len<string2_len:
+#     print(string2)
+
+######################################## Number 8
+# tup = ()
+# tup_temp = ()
+# ls = []
+# for i in range(1, 21):
+#     tup_temp = (i,i**2)
+#     ls.append(tup_temp)
+# print(ls)
+# tup = tuple(ls)
+# print(tup)
+
+######################################## Number 9
+# x = int(input('Enter a number   :'))
+# for i in range(x):
+#     if (i%2 == 0):
+#         print(i, 'EVEN')
+#     elif(i%2 != 0):
+#         print(i, 'ODD')
+
+######################################## Number 10
+# ls = []
+
+# def fun(i):
+#         if i%2 == 0:
+#             return True
+#         elif i%2 != 0:
+#             return False
+
+
+
+# ls = [i for i in range(21)]
+# print(ls)
+# filtered = list(filter(fun, ls))  ######### listcasting is needed to list the object instead of random object name printing
+# print(list(filtered))   ######### listcasting is needed to list the object instead of random object name printing
+
+######################################### Number 11
+# ls = []
+# ls_up = []
+# def fun(i):
+#         if i%2 == 0:
+#             return True
+#         elif i%2 != 0:
+#             return False
+
+# ls = [i for i in range(1,11)]
+# filtered = list(filter(fun, ls))
+# print(filtered)
+
+# ls_up = list((map(lambda n:n**2, filtered))) ###### Lambda is used for single element. but if you want to run lambda funciton for all elements in list, map is a short way of doing it
+# print(ls_up)
+
+######################################## Number 12
+
+# try:
+#     x = int(input('Enter any number :'))
+#     ans = x/0
+#     print(ans)
+# except ZeroDivisionError as e:
+#     print('ZeroDivisionError:', e)
+#     print('Cannot divide by zero!')
+
+######################################### Number 13
+# import functools
+
+# ls = [1,2,3,4,5,6,7]
+# print(functools.reduce(lambda x, y : str(x)+str(y), ls))
+
+########################################## Number 14
+# ls = []
+# ls_div3 = []
+# ls_div7 = []
+# x = int(input('enter highest number  :'))
+# for i in range(x+1):
+#     ls.append(i)
+# print(ls)
+
+# def ntdiviby3(ls):
+#     for i in ls:
+#         if i%3 != 0:
+#             ls_div3.append(i)
+#     return ls_div3
+
+# def diviby7(ls):
+#     for i in ls:
+#         if i%7 == 0:
+#             ls_div7.append(i)
+#     return ls_div7
+
+# ls_1 = ntdiviby3(diviby7(ls))
+
+# print(ls_1)
+
+########################################## Number 15 - not sure how to use map function
+
+# ls = [1,2,3,4,5,6,7,8]
+
+# def mult(ls):
+#     mul = 1
+#     for i in ls:
+#         mul *=i
+#     return mul
+
+# y = mult(ls)
+
+# print(y)
+
+######################################### Number 16 -- in the first example, finally portion is run first. in the second example, try portion is run first? 
+
+# def foo():
+#     try:
+#         return 1
+#     finally:
+#         return 2
+# k = foo()
+# print(k)
+
+
+#  
+
+

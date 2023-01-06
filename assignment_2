@@ -1,0 +1,227 @@
+# a, b, c = int(1), float(2.01), str("string")
+# print(a,b,c)
+
+###############################################################Number 2
+# comp = complex()
+# print(type(comp))
+# x = int(5)
+# comp = x
+# print(x,comp)
+
+############################################################### Number 3
+# x = 3
+# y = 4
+# print(x, y)
+# x, y = y, x
+# print(x, y)
+# # z = x
+# # x = y
+# # y = z
+# # print(x, y)
+
+################################################################# Number 4 - Not sure how 
+################################################################# Number 5
+# x = int(input("Enter first number between 1 and 10:   "))
+# y = int(input("Enter second number between 1 and 10:   "))
+# z = x + y
+# result = z + 30
+# print("Fianl output is: ", result)
+################################################################# Number 6
+# x = input("Enter anything:  ")
+# print("Data type of the output is:  ",type(x))
+################################################################# Numbeer 7
+################################################################# Number 8
+# a = 2
+# a = "string"
+# print('a', type(a))
+# # yes. If data type value is changed, the data type itself also changes. 
+
+######################################################################################Task 2
+#################################################################Number 1
+
+# x = int(input("Enter a number   :"))
+# if (x%3 == 0 and x%5 == 0):
+#     print("Consultadd- Python Training")
+# elif(x%3 == 0):
+#     print("Consultadd")
+# elif(x%5 == 0):
+#     print("Python Training")
+# else:
+#     print("Nothing to print")
+
+################################################################## Number 2
+# x = int(input("Enter 1 for Addition, 2 for Subtraction, 3 for Division, 4 for Muultiplcation or 5 for Average    :"))
+
+# num1 = int(input("Enter first number    :"))
+# num2 = int(input("Enter second number    :"))
+
+# if x ==1:
+#     ans = num1+num2
+# elif x ==2:
+#     ans = num1-num2
+# elif x ==3:
+#     ans = num1/num2
+# elif x ==4:
+#     ans = num1*num2
+# elif x ==5:
+#     num3 = int(input("Enter third number    :"))
+#     num4 = int(input("Enter fourth number    :"))
+#     ans = (num1+num2+num3+num4)/4
+
+# print("The answer is: ", ans)
+# if ans<0:
+#     print("Negative")
+
+################################################################### Number 3
+# a, b, c = 10, 20, 30
+# avg = (a+b+c)/3
+
+# if avg > a and avg>b and avg>c:
+#     print("avg is higher than a, b and c")
+# else:
+#     if avg>a and avg>b:
+#         print("avg is higher than a and b")
+#     elif avg>a and avg > c:
+#         print("avg is higher than a and c")
+#     elif avg>b and avg>c:
+#         print("avg is higher than b and c")
+#     elif avg>a:
+#         print("avg is just higher than a")
+#     elif avg>b:
+#         print("avg is just higher than b")
+#     elif avg>c:
+#         print("avg is just higher than c")
+#     else:
+#         pass
+
+################################################################## Number 4
+
+# k = int((input("how many times to run loop? :")))
+
+# for i in range(k):
+#     temp = int(input("Enter a number:   "))
+#     if temp < 0:
+#         print('Its over')
+#         break
+#     else:
+#         print('Good Going')
+#         continue
+
+
+################################################################### Number 5
+
+# for i in range(2000,3201):
+#     if i%7 ==0 and i%5 != 0:
+#         print(i)
+#     else:
+#         continue
+
+################################################################### Number 6
+# x=123
+
+# for i in x:
+#     print(i)
+
+# error - integer object is not iterable
+################
+# i = 0
+# while i < 5:
+#     print(i)
+#     i += 1
+#     if i == 3:
+#         break
+#     else:
+#         print("error")
+
+# Output below:
+# 0
+# error
+# 1    
+# error
+# 2  
+################
+# count = 0
+# while True:
+#     print(count)
+#     count += 1
+#     if count >= 5:
+#         break
+
+# Output below:
+# 0
+# 1
+# 2
+# 3
+# 4
+
+############################################################## Number 7
+
+# for i in range(0,7):
+#     if i == 3 or i == 6:
+#         continue
+#     else:
+#         print(i)
+
+############################################################## Number 8
+# string = str(input("Enter a string:     "))
+# count_digit = 0
+# count_alpha = 0
+# for i in string:
+#     if i.isdigit() == True:
+#         count_digit += 1
+#     elif i.isalpha() == True:
+#         count_alpha +=1 
+#     else:
+#         continue
+# print("Digits:  ", count_digit)
+# print("Alpha:  ", count_alpha)
+############################################################## Number 9
+# lucky_number = 101
+
+# while True:
+#     x = int(input('Guess the lucky number'))
+#     if x == lucky_number:
+#         print('You got it!')
+#         break
+#     answer = str(input('Want to continue?Type no to terminate, or press any key to continue:  '))
+#     if answer =='no':
+#         break
+#     else:
+#         continue
+
+############################################################### Number 10
+# lucky_number = 101
+# success = 0
+# counter = 1
+# while counter<=5:
+#     print(counter)
+#     x = int(input('Guess the lucky number'))
+#     if x == lucky_number:
+#         print('Good Guess!')
+#         success = 1
+    
+#     if counter ==5:
+#         print('Game Over!')
+    
+#     counter +=1
+
+# if success == 0:
+#     print('Try again!')
+############################################################### Number 11
+lucky_number = 101
+success = 0
+counter = 1
+while counter<=5:
+    x = int(input('Guess the lucky number'))
+    if x == lucky_number:
+        success = 1
+        print('Good Guess!')
+        break
+    
+    if counter ==5:
+        print('Game Over!')
+    
+    counter +=1
+
+if success == 0:
+    print('Try again!')

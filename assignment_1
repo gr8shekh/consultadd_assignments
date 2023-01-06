@@ -1,0 +1,160 @@
+# x=[100,200,300,400,500,[1,2,3,4,5,[10,20,30,40,50],6,7,8,9],600,700,800]
+# #   0   1   2   3   4                   5                    6   7   8
+
+# al1_temp = x[5]
+# al1 = al1_temp[0:4]
+# print(al1)
+# al2 = x[6:8]
+# print(al2)
+# al3 = [x[0],x[2],x[4],x[6],x[8]]
+# print(al3)
+# al4 = x[::-1]
+# print(al4)
+# x_inner_inner = []
+# X_inner_inn = al1_temp[5]
+# X_inner_inner = X_inner_inn[0]
+# print(X_inner_inner)                                     ## 10 is not printing as [10]
+# al6 = []
+# print(al6)
+
+
+############################################################################## Number 2
+# list_using_range= []
+# for i in range(1,10):
+#     list_using_range.append(i)
+
+# print(list_using_range)
+
+#############################################################################Number 3
+# Tuple cannot be edited and the sequence also cannot be edited. Therefore, a tuple can be used to write once, no edit and read many times applications. 
+
+############################################################################# Number 4
+# ex_4 = []
+# for i in range(1,1000):
+#     if (i%2==0 and i%3==0):
+#         ex_4.append(i)
+#     else:
+#         continue
+# print(ex_4)
+############################################################################## Number 5
+# sa = str()
+# string = str(input("Enter string:   "))
+# s = string[::-1]
+# for i in s:
+#     if (i == 'e' or i == 'a' or i == 'i' or i == 'o' or i == 'u'):
+#         print(i)
+#         sa = sa+i
+# print(sa)
+############################################################################### Number 6
+# Not clear what the ask is
+
+################################################################################ Number 7
+# x=[1,2,3,4,5,6,7,8,9,-1]
+
+# for i in x:
+#     if (i + i ==8):
+#         print([i,i]) 
+#     else:
+#         pass
+#     for j in x[i:]:
+#         if i + j == 8:
+#             print([i,j])
+#         else:
+#             pass
+################################################################################ Number 8
+# even_list = []
+# odd_list=[]
+# even_sum = int()
+# odd_sum = int()
+# leven = 0
+# lodd = 0
+# while(leven<5 or lodd<5):
+#     x = int(input("Enter the number:    "))
+#     if(leven ==5 and lodd ==5):
+#         print("Entered 5 numbers of each even and odd")
+#         print("Even numbers are:    "+even_list)
+#         print("Sum of Even numbers is:  "+even_sum)
+#         print("Odd numbers are:    "+odd_list)
+#         print("Sum of Odd numbers is:  "+odd_sum)
+#     elif(leven ==5):
+#         print('Entered sufficient even numbers already')
+#     elif(lodd ==5):
+#         print('Entered sufficient odd numbers already')
+#     elif(x%2 == 0 and leven<5):
+#         even_list.append(x)
+#         even_sum+=x
+#         leven += 1
+#         print(even_sum, leven)
+#     elif(x%2 != 0 and lodd<5):
+#         odd_list.append(x)
+#         odd_sum+=x
+#         lodd += 1
+#         print(odd_sum, lodd)
+#     else:
+#         pass
+
+
+
+#########Trial 2
+
+even_list = []
+odd_list=[]
+even_sum = int()
+odd_sum = int()
+leven = 0
+lodd = 0
+while(leven<5 or lodd<5):
+    x = int(input("Enter the number:    "))
+
+    if(x%2 == 0):
+        if(leven<5):
+            even_list.append(x)
+            even_sum+=x
+            leven += 1
+        else:
+            print('you have entered sufficient even numbers already! Please try again and enter odd number')
+    elif(x%2 != 0):
+        if(lodd<5):
+            odd_list.append(x)
+            odd_sum+=x
+            lodd += 1
+        else:
+            print('you have entered sufficient odd numbers already! Please try again and enter even number')
+    else:
+        pass
+
+print("Entered 5 numbers of each even and odd")
+print("Even numbers are:    ",even_list)
+print("Sum of Even numbers is:  ", even_sum)
+print("Odd numbers are:    ", odd_list)
+print("Sum of Odd numbers is:  ", odd_sum)
+
+################################################################################ Number 9
+# stp_dup = []
+# sa=str()
+# string = str(input("Enter a string:    "))
+# count = 0
+# for i in string:
+#     if (i.isdigit() == True):
+#         continue
+#     else:
+#         sa = sa + i
+# print(sa)
+# for j in sa:
+#     if j in stp_dup:
+#         continue
+#     else:
+#         count = sa.count(j)
+#         print(j, '=', count)
+#         stp_dup.append(j)
+################################################################################## Number 10
+# tup = (1,2,3,4,5,6,7,8,9,10)
+# lst_up = []
+# temp_tup = []
+# for i in tup:
+#     if (i%2 == 0):
+#         lst_up.append(i)
+#     else:
+#         continue
+# tup_up=tuple(lst_up)
+# print(tup_up)
